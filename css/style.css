@@ -1,0 +1,10 @@
+/* Sets a light gray background color */
+body {
+  background-color: lightgray;
+  font-size: 20px;
+}
+
+/* Color for the header*/
+.headerColor {
+    color: black;
+}
