@@ -1,12 +1,17 @@
-/* Sets a light gray background color */
 body {
-  background-color: #E6EE9C;
   font-size: 20px;
 }
 
-/* Color for the header*/
+.navbar {
+  background-color: #E6EE9C;
+}
+
 .headerColor {
     color: #7CB342;
+}
+
+.jumbotron {
+  color: #7CB342;
 }
 
 .desc {
