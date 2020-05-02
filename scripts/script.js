@@ -1,15 +1,21 @@
-function displayPage(data) { // Run when JSON loads
-    var newContent = ''; // Variable to hold HTML
-   
-      // For loop to loop through the data file
-      for (var i = 0; i < data.pageData.length; i++) { 
+var xhr = new XMLHttpRequest();
 
-        // Textbook buying info, ISBN, etc.
-        newContent += '<div>';
+xhr.onload = function() {
+    responseObject.JSON.parse(xhr.responseText);
+    
+    var newContent = '';
+    for (var i = 0; i < responseObject.pageData.length; i++) {
+        newContent += '<div class="desc">';
         newContent += data.pageData[i].desc;
         newContent += '</div>';
-      }
-  
-      // Update the page with the new content
-      document.getElementById('content').innerHTML = newContent;
-  }
+    }
+    
+}
+ 
+xhr.open('GET', "https://github.com/thekaysev/final/blob/master/data/final.JSON", true);
+xhr.send(null);
+
+
+
+
+
