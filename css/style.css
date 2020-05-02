@@ -1,5 +1,6 @@
 body {
   font-size: 20px;
+  background-color: #E6EE9C
 }
 
 .navbar {
@@ -7,7 +8,7 @@ body {
 }
 
 .headerColor {
-    color: #7CB342;
+    background-color: #7CB342;
 }
 
 .jumbotron {
