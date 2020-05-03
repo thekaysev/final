@@ -13,7 +13,7 @@ xhr.onload = function() {
     
 };
  
-xhr.open('GET', "https://github.com/thekaysev/final/blob/master/data/final.json", true);
+xhr.open('GET', "https://thekaysev.github.io/final/data/final.json", true);
 xhr.send(null);
 
 
