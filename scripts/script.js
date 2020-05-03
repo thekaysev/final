@@ -6,7 +6,8 @@ xhr.onload = function() {
     var newContent = '';
     for (var i = 0; i < responseObject.pageData.length; i++) {
         newContent += '<div class="desc">';
-        newContent += '<p>' + data.pageData[i].desc + '</p>';
+	newContent += '<h2>' + responseObject.pageData[i].header + '</h2>';
+        newContent += '<p>' + responseObject.pageData[i].desc + '</p>';
         newContent += '</div>';
     }
 	document.getElementById('pleasework').innerHTML = newContent;
