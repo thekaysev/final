@@ -7,6 +7,7 @@ xhr.onload = function() {
     var newContent = '';
     for (var i = 0; i < responseObject.pageData.length; i++) {
         newContent += '<div class="desc">';
+        newContent += '<h2>' + data.pageData[i].desc + '</h2>';
         newContent += '<p>' + data.pageData[i].desc + '</p>';
         newContent += '</div>';
     }
