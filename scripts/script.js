@@ -1,7 +1,7 @@
 var xhr = new XMLHttpRequest();
 
 xhr.onload = function() {
-    responseObject.JSON.parse(xhr.responseText);
+    responseObject = JSON.parse(xhr.responseText);
     
     var newContent = '';
     for (var i = 0; i < responseObject.pageData.length; i++) {
