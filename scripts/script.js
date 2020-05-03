@@ -2,6 +2,7 @@ var xhr = new XMLHttpRequest();
 
 xhr.onload = function() {
     responseObject.JSON.parse(xhr.responseText);
+    var pleasework = document.getElementById("pleasework");
     
     var newContent = '';
     for (var i = 0; i < responseObject.pageData.length; i++) {
